@@ -13,9 +13,13 @@ public class Main {
         library.addBook(new Book("A Brief History of Time", "Stephen Hawking", 1988, 212, "Science"));
         library.addBook(new Book("Sapiens", "Yuval Noah Harari", 2011, 443, "History"));
 
+        //remove a book by title
+        library.removeBook("1984");
+
         //add a user
         User user = new User("John Doe", "777");
         library.registerUser(user);
+        
 
         //Loan out a book
         library.loanOutBook("1984", user);
